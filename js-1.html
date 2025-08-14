@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript lessons</title>
+
+    <script>
+        document.write("Hello Students from head tag <br>");
+    </script>
+
+    <script src="externalJs.js"></script>
+
+    <script>
+        //Define Function
+        function Greeting()
+        {
+            document.write("Good Morning");
+        }
+
+        function average(a1, b1, c1)
+        {
+            var total =  a1+b1+c1;
+            var avg = total / 3; 
+            return avg;
+        }
+    </script>
+
+</head>
+<body>
+
+    <script>
+        document.write("<b> Hello Students from body tag <br>");
+
+        // Function Calling
+        Greeting();
+
+        var num1 = parseInt(prompt("Enter num1 for average:"));
+        var num2 = parseInt(prompt("Enter num2 for average:"));
+        var num3 = parseInt(prompt("Enter num3 for average:"));
+
+        var result = average(num1, num2, num3);
+        document.write("<br>The average of numbers is: " + result + "<br>") 
+    </script>
+
+
+</body>
+</html>

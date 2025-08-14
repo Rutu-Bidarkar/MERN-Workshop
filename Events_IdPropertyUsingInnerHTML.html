@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function gethtmlcontent()
+        {
+            alert("Content of h1 is: " + document.getElementById("heading1").innerHTML);
+            alert("Content of paragraph is: " + document.getElementById("para1").innerHTML);
+
+            document.getElementById("heading1").innerHTML = "New Heading";
+            document.getElementById("para1").innerHTML = "Hello Students of profound!!!";
+
+            alert("Content of textarea is: " + document.getElementById("textarea").value);
+            document.getElementById("textarea").value = "I am writing in textarea using Javascript";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading1">Heading 1</h1>
+    <p id="para1">Hello students</p>
+    <textarea id="textarea" cols="100" rows="3">   </textarea><br><br>
+
+    <input type="button" name="btn1" onclick="gethtmlcontent()" value="Click Me">
+</body>
+</html>

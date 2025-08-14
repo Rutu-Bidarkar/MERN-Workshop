@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Add()
+        {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+
+            var c = a+b;
+
+            document.getElementById("result").value = c;
+        }
+    </script>
+
+</head>
+<body>
+
+    <form>
+        Number1 = <input type="text" id="num1"><br><br>
+        Number2 = <input type="text" id="num2"><br><br>
+        Result = <input type="text" id="result"><br><br>
+
+        <input type="button" id="add" value="ADD" onclick="Add()" class="class3">
+
+        
+    </form>
+    
+    
+</body>
+</html>
